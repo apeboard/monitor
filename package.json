@@ -1,0 +1,10 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "micro": "^9.3.4",
+    "node-os-utils": "^1.3.6"
+  }
+}
