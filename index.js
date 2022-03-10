@@ -25,7 +25,7 @@ const healthCheckLCD = async () => {
 
     if (res.status >= 400) return 'LCD failed to respond!'
 
-    const lcdJson = await res.json()
+    const json = await res.json()
 
     if (json.syncing) return 'LCD is catching up!'
   } catch {
