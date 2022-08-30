@@ -1,14 +1,15 @@
 # Quick Setup Script
 1. Install dependencies
 ```sh
-git clone https://github.com/apeboard/monitor.git;
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -;
 sudo apt-get install -y nodejs;
 npm install pm2 -g;
 pm2 install pm2-logrotate;
+git clone https://github.com/apeboard/monitor.git;
+npm install -C /monitor;
 ```
 
-2. Add `pm2.json`
+1. Add `pm2.json`
 ```sh
 nano pm2.json;
 ```
