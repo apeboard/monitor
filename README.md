@@ -6,7 +6,7 @@ sudo apt-get install -y nodejs;
 npm install pm2 -g;
 pm2 install pm2-logrotate;
 git clone https://github.com/apeboard/monitor.git;
-npm install -C /monitor;
+npm install -C ./monitor;
 ```
 
 1. Add `pm2.json`
