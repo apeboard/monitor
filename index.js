@@ -21,7 +21,7 @@ const healthCheckHive = async () => {
 
 const healthCheckLCD = async () => {
   try {
-    const res = await fetch('http://localhost:1317/syncing')
+    const res = await fetch('http://localhost:1317/cosmos/base/tendermint/v1beta1/syncing')
 
     if (res.status >= 400) return 'LCD failed to respond!'
 
